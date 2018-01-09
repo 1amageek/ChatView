@@ -24,5 +24,4 @@ class ChatView: UICollectionView {
             self.setContentOffset(offset, animated: animated)
         }
     }
-    
 }

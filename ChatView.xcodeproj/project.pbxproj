@@ -11,6 +11,7 @@
 		124CE35A2004D9060073B910 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124CE3572004D9060073B910 /* ChatViewCell.swift */; };
 		124CE35B2004D9060073B910 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124CE3582004D9060073B910 /* ChatViewController.swift */; };
 		124CE35C2004D9060073B910 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124CE3592004D9060073B910 /* ChatView.swift */; };
+		124CE35E2004DB530073B910 /* ChatView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 124CE35D2004DB530073B910 /* ChatView.podspec */; };
 		51F3DDBB9B8EE7F02E587967 /* Pods_ChatView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61F91A16FD62D1063255081 /* Pods_ChatView.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		124CE3572004D9060073B910 /* ChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
 		124CE3582004D9060073B910 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		124CE3592004D9060073B910 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		124CE35D2004DB530073B910 /* ChatView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChatView.podspec; sourceTree = "<group>"; };
 		447FAF81A48602D9C7B00F14 /* Pods-ChatView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatView/Pods-ChatView.release.xcconfig"; sourceTree = "<group>"; };
 		F61F91A16FD62D1063255081 /* Pods_ChatView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -41,6 +43,7 @@
 		124CE3422004D8120073B910 = {
 			isa = PBXGroup;
 			children = (
+				124CE35D2004DB530073B910 /* ChatView.podspec */,
 				124CE34E2004D8120073B910 /* ChatView */,
 				124CE34D2004D8120073B910 /* Products */,
 				D2A96141032651DA5597A974 /* Pods */,
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124CE35E2004DB530073B910 /* ChatView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
