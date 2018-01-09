@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ChatViewCell: UICollectionViewCell {
+open class ChatViewCell: UICollectionViewCell {
 
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         _ = calculateSize()
     }
     
-    func calculateSize() -> CGSize {
+    open func calculateSize() -> CGSize {
         return CGSize(width: self.bounds.width, height: self.bounds.height)
     }
 }
