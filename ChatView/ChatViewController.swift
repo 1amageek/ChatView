@@ -103,7 +103,7 @@ open class ChatViewController: UIViewController, UICollectionViewDelegate {
 
     // MARK: -
 
-    private(set) lazy var collectionView: ChatView = {
+    public private(set) lazy var collectionView: ChatView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 0
@@ -120,7 +120,7 @@ open class ChatViewController: UIViewController, UICollectionViewDelegate {
         return view
     }()
 
-    private(set) lazy var toolbar: Toolbar = {
+    public private(set) lazy var toolbar: Toolbar = {
         let toolbar: Toolbar = Toolbar()
         toolbar.maximumHeight = 100
         return toolbar
