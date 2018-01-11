@@ -14,7 +14,6 @@ open class ChatViewCell: UICollectionViewCell {
         let view: UIStackView = UIStackView()
         view.axis = .vertical
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.blue
         return view
     }()
 
