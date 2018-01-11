@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="gmB-NS-FRA" customClass="MessageView" customModule="Sample" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R6-8R-M3Q">
-                    <rect key="frame" x="8" y="8" width="359" height="167"/>
+                    <rect key="frame" x="8" y="8" width="359" height="85"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="L40-MK-fcS" firstAttribute="trailing" secondItem="1R6-8R-M3Q" secondAttribute="trailing" constant="8" id="ReR-ZV-183"/>
                 <constraint firstItem="1R6-8R-M3Q" firstAttribute="top" secondItem="L40-MK-fcS" secondAttribute="top" constant="8" id="eEF-AP-aah"/>
@@ -32,7 +32,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="L40-MK-fcS"/>
-            <point key="canvasLocation" x="-140.5" y="-374.5"/>
+            <point key="canvasLocation" x="-140.5" y="-415.5"/>
         </view>
     </objects>
 </document>

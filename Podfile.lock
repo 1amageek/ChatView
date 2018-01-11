@@ -1,12 +1,19 @@
 PODS:
+  - Instantiate (2.2.0)
+  - InstantiateStandard (2.2.0):
+    - Instantiate (~> 2.2)
   - Toolbar (0.0.6)
 
 DEPENDENCIES:
+  - Instantiate
+  - InstantiateStandard
   - Toolbar
 
 SPEC CHECKSUMS:
+  Instantiate: 9810ecb69b7d0c393e1938559a6f896587785b64
+  InstantiateStandard: 0bf32c19d3624822975e554f3706ca1e83c90ee5
   Toolbar: 30a12aa3679d1f6b2bd3054c40ae0a93ef80cbe4
 
-PODFILE CHECKSUM: 2686acfcdbde65a17b133e303ed4af604cb66c86
+PODFILE CHECKSUM: 15bf7da86c944de988317fbf8adcb7c7dd860599
 
 COCOAPODS: 1.4.0.beta.2

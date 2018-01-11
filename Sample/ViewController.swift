@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: ChatViewController {
 
-    override func cell(_ cell: ChatViewCell, for indexPath: IndexPath) {
-
-    }
 
 }
 

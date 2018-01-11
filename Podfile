@@ -11,5 +11,7 @@ target 'Sample' do
   use_frameworks!
 
   pod 'Toolbar'
+  pod 'Instantiate'
+  pod 'InstantiateStandard'
 end
 

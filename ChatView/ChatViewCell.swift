@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 
-open class ChatViewCell: UICollectionViewCell {
+open class ChatViewCell: UICollectionViewCell, Reusable {
 
     public private(set) lazy var stackView: UIStackView = {
         let view: UIStackView = UIStackView()
@@ -17,23 +19,51 @@ open class ChatViewCell: UICollectionViewCell {
         return view
     }()
 
+    public lazy var widthConstraint: NSLayoutConstraint = {
+        return self.contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
+    }()
+
+    public lazy var heightConstraint: NSLayoutConstraint = {
+        return self.contentView.heightAnchor.constraint(greaterThanOrEqualToConstant: 0)
+    }()
+
+    public lazy var topConstraint: NSLayoutConstraint = {
+        return self.contentView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 0)
+    }()
+
+    public lazy var bottomConstraint: NSLayoutConstraint = {
+        return self.contentView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 0)
+    }()
+
+    public lazy var leadingConstraint: NSLayoutConstraint = {
+        return self.contentView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 0)
+    }()
+
+    public lazy var trailingConstraint: NSLayoutConstraint = {
+        return self.contentView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 0)
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(stackView)
-        self.contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-        self.contentView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 0).isActive = true
-        self.contentView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 0).isActive = true
-        self.contentView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 0).isActive = true
-        self.contentView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 0).isActive = true
+        self.widthConstraint.isActive = true
+        self.heightConstraint.isActive = true
+        self.topConstraint.isActive = true
+        self.bottomConstraint.isActive = true
+        self.leadingConstraint.isActive = true
+        self.trailingConstraint.isActive = true
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(stackView)
-        self.contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-        self.contentView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 0).isActive = true
-        self.contentView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 0).isActive = true
-        self.contentView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 0).isActive = true
-        self.contentView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 0).isActive = true
+        self.widthConstraint.isActive = true
+        self.heightConstraint.isActive = true
+        self.topConstraint.isActive = true
+        self.bottomConstraint.isActive = true
+        self.leadingConstraint.isActive = true
+        self.trailingConstraint.isActive = true
     }
 }
