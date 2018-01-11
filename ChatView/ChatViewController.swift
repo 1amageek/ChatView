@@ -16,7 +16,7 @@ open class ChatViewController: UIViewController, UICollectionViewDelegate {
     open func registerCells(_ collectionView: UICollectionView) {
 
     }
-
+    
     open override func loadView() {
         super.loadView()
         self.view.backgroundColor = .white
@@ -108,6 +108,7 @@ open class ChatViewController: UIViewController, UICollectionViewDelegate {
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical
+        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
         let view: ChatView = ChatView(frame: self.view.bounds, collectionViewLayout: layout)
         view.dataSource = self
         view.delegate = self
@@ -145,7 +146,7 @@ extension ChatViewController: UICollectionViewDataSource {
     }
 
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 9
     }
 
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
