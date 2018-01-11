@@ -41,7 +41,7 @@ open class ChatViewCell: UICollectionViewCell {
         return self.contentView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 0)
     }()
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(stackView)
@@ -53,7 +53,7 @@ open class ChatViewCell: UICollectionViewCell {
         self.trailingConstraint.isActive = true
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(stackView)
