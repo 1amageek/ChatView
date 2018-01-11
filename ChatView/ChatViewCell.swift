@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import Instantiate
-import InstantiateStandard
 
-open class ChatViewCell: UICollectionViewCell, Reusable {
+open class ChatViewCell: UICollectionViewCell {
 
     public private(set) lazy var stackView: UIStackView = {
         let view: UIStackView = UIStackView()
