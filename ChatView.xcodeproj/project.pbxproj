@@ -22,8 +22,9 @@
 		12D512D020070B0000B80313 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124CE3582004D9060073B910 /* ChatViewController.swift */; };
 		12D512D6200725D400B80313 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D512D5200725D400B80313 /* MessageView.swift */; };
 		12D512D8200725E000B80313 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D512D7200725E000B80313 /* MessageView.xib */; };
-		12D512D92007270D00B80313 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D512D5200725D400B80313 /* MessageView.swift */; };
 		12D512DA2007270D00B80313 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D512D7200725E000B80313 /* MessageView.xib */; };
+		12D512E12008A24B00B80313 /* ChatViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D512E02008A24B00B80313 /* ChatViewFlowLayout.swift */; };
+		12D512E22008ACA900B80313 /* ChatViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D512E02008A24B00B80313 /* ChatViewFlowLayout.swift */; };
 		51F3DDBB9B8EE7F02E587967 /* Pods_ChatView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61F91A16FD62D1063255081 /* Pods_ChatView.framework */; };
 		A93508340838A8EB81E48053 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6703F23633023130CC99EA0D /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		12D512CA20070AFA00B80313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D512D5200725D400B80313 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		12D512D7200725E000B80313 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		12D512E02008A24B00B80313 /* ChatViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewFlowLayout.swift; sourceTree = "<group>"; };
 		447FAF81A48602D9C7B00F14 /* Pods-ChatView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatView/Pods-ChatView.release.xcconfig"; sourceTree = "<group>"; };
 		5AC42378C6CA729ADABBE0B3 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		6703F23633023130CC99EA0D /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 				124CE3592004D9060073B910 /* ChatView.swift */,
 				124CE3572004D9060073B910 /* ChatViewCell.swift */,
 				124CE3582004D9060073B910 /* ChatViewController.swift */,
+				12D512E02008A24B00B80313 /* ChatViewFlowLayout.swift */,
 				124CE3502004D8120073B910 /* Info.plist */,
 			);
 			path = ChatView;
@@ -354,10 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D512D92007270D00B80313 /* MessageView.swift in Sources */,
 				124CE35B2004D9060073B910 /* ChatViewController.swift in Sources */,
 				124CE35C2004D9060073B910 /* ChatView.swift in Sources */,
 				124CE35A2004D9060073B910 /* ChatViewCell.swift in Sources */,
+				12D512E12008A24B00B80313 /* ChatViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12D512D6200725D400B80313 /* MessageView.swift in Sources */,
+				12D512E22008ACA900B80313 /* ChatViewFlowLayout.swift in Sources */,
 				12D512CF20070B0000B80313 /* ChatViewCell.swift in Sources */,
 				12D512C120070AFA00B80313 /* ViewController.swift in Sources */,
 				12D512CE20070B0000B80313 /* ChatView.swift in Sources */,

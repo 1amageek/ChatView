@@ -104,7 +104,7 @@ open class ChatViewController: UIViewController, UICollectionViewDelegate {
     // MARK: -
 
     public private(set) lazy var collectionView: ChatView = {
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let layout: ChatViewFlowLayout = ChatViewFlowLayout()
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical

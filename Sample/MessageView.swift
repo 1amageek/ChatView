@@ -12,4 +12,5 @@ import InstantiateStandard
 
 public class MessageView: UIView, NibInstantiatable {
 
+    @IBOutlet weak var textLabel: UILabel!
 }
